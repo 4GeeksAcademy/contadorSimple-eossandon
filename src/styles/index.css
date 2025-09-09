@@ -9,3 +9,16 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.target{
+    width: 40px;
+    height: 60px;
+    margin: 8px;
+    background-color: rgb(45, 44, 44);
+    border-radius: 1px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
