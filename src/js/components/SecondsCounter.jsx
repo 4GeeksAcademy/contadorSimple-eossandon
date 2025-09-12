@@ -1,21 +1,19 @@
 import '../../styles/index.css'
-import React from "react";
 
 
 function Counter (props){
+  const { digitOne} = props
   return (
     <div className='container'>
-      <div className="target ">{props.digitSix}</div>
-      <div className="target ">{props.digitFive}</div>
-      <div className="target ">{props.digitFour}</div>
-      <div className="target ">{props.digitThree}</div>
-      <div className="target ">{props.digitTwo}</div>
-      <div className="target ">{props.digitOne}</div>
+      <div className="target "><i class="fa-solid fa-clock"></i></div>
+      <div className="target ">{Math.floor((digitOne / 100000) % 10)}</div>
+      <div className="target ">{Math.floor((digitOne / 10000) % 10)}</div>
+      <div className="target ">{Math.floor((digitOne / 1000) % 10)}</div>
+      <div className="target ">{Math.floor((digitOne / 100) % 10)}</div>
+      <div className="target ">{Math.floor((digitOne / 10) % 10)}</div>
+      <div className="target ">{(digitOne / 1 )% 10}</div>
     </div>
   );
 };
 export default Counter
 
-setInterval(function(){
-    
-})
